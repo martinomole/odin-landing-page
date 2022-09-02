@@ -136,3 +136,19 @@ a {
     display: flex;
     gap: 16px;
 }
+
+.signup,
+.signup2 {
+    background-color: #3882f6;
+    color: #f9faf8;
+    padding: 8px 48px;
+    border-radius: 8px;
+}
+
+.signup {
+    border: none;
+}
+
+.signup2 {
+    border: 2px solid #f9faf8;
+}
