@@ -1,18 +1,28 @@
 body {
     display: flex;
     flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+    max-width: 100vw;
+}
+
+.body {
     flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 32px;
 }
 
 .greeter {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .greeter-text {
@@ -25,55 +35,104 @@ body {
 .splash2 {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .card-container {
     display: flex;
     justify-content: space-evenly;
+    gap: 48px;
+    max-width: 100vw;
 }
 
 .card {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    width: 200px;
 }
 
 .splash3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex: 1;
+    background-color: #e5e7eb;
 }
 
 .quote-container {
     display: flex;
     flex-direction: column;
-    flex-grow: 0;
-    width: 700px;
+    justify-content: center;
+    width: 900px;
 }
 
 .quote {
-    display: flex;
-    justify-content: center;
+    font-size: 36px;
+    font-weight: 100;
+    font-style: italic;
 }
 
 .reference {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .splash4 {
+    background-color: #3882f6;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex: 1;
 }
 
 .call-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-grow: 0;
 }
 
 .footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.header,
+.greeter,
+.footer {
+    background-color: #1f2937;
+}
+
+h1 {
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.footer {
+    color: #f9faf8;
+}
+
+.greeter-text p,
+a {
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+.logo {
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+a {
+    text-decoration: none;
+}
+
+.links {
+    display: flex;
+    gap: 16px;
 }
